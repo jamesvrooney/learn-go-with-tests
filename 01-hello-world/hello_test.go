@@ -2,11 +2,11 @@ package main
 
 import "testing"
 
-func TestHello(t *testing.T) {
-    got := Hello()
-    want := "Hello, world"
+func TestPersonalHello(t *testing.T) {
+    actual := Hello("James")
+    expected := "Hello, James!"
 
-    if got != want {
-        t.Errorf("got %q want %q", got, want)
+    if actual != expected {
+        t.Errorf("actual %q - expected %q", actual, expected)
     }
 }
